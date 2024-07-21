@@ -1,0 +1,115 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #bbdefb;
+    color: #0277bd;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px; 
+    border: 2px solid #0288d1; 
+    border-radius: 15px;
+    background-color: #e0f7fa; 
+    color: #000; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #01579b;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p, .description p, .photo-description {
+    font-family: 'Open Sans', sans-serif;
+    color: #000; 
+    font-weight: bold; 
+}
+
+.photo-main-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.description {
+    margin-right: 20px;
+    text-align: left;
+    max-width: 300px;
+}
+
+.special-font p {
+    font-family: 'Lobster', cursive; 
+    font-size: 2.5em; 
+    color: #333; 
+}
+
+.photo-frame {
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    height: 250px; 
+    border: 5px solid #fff;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.photo-frame.circle {
+    border-radius: 50%;
+}
+
+.photo-frame.frame-styled {
+    border-radius: 10px;
+    background: linear-gradient(deg, #e1e5e9, #478ed1);
+    padding: 10px;
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo-frame:hover {
+    transform: scale(1.05);
+}
+
+.description p {
+    font-size: 1em;
+    color: #000; 
+}
+
+.photo-description {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #000000; 
+}
+
+.gift-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 25px;
+    background-color: #0288d1;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: bold; 
+}
+
+.gift-link:hover {
+    background-color: #0277bd;
+    transform: scale(1.1);
+}
